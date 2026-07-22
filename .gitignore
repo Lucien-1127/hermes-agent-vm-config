@@ -1,0 +1,6 @@
+.env
+secrets/
+sessions/
+logs/
+*.log
+memories/
