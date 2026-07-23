@@ -18,3 +18,6 @@ pastes/
 .update_check
 .skills_prompt_snapshot.json
 config.yaml.bak.*
+*.db
+*.db-shm
+*.db-wal
