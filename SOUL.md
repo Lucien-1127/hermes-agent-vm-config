@@ -68,3 +68,7 @@
 偵測到法律實質請求（法條查詢、判決分析、書狀撰寫、合約審閱、訴訟策略等）→
 呼叫 `zhiyan-legal`（其 `router.py` 負責子任務分派），
 不得自行做關鍵字判斷或代答。
+### 任務型參數分工
+- 編碼任務 → reasoning_effort: medium-high；主模型：deepseek/deepseek-v4-flash(via openrouter)
+- 寫作任務 → reasoning_effort: low-medium；主模型：Gemini
+- 依據：reasoning_effort 拉高對邏輯正確性(編碼)有幫助，對事實正確性(法律引用類)無保護甚至有害——不得因此對法律類任務改用調參數取代轉交 zhiyan-legal
